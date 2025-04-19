@@ -31,16 +31,16 @@ header {
 
 
 .search-bar {
-    font-size: 25px;
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     /* border: 1px solid black; */
-    height: 50px;
+    height: 3rem;
 }
 
 .top-info {
     display: flex;
-    font-size: 24px;
+    font-size: 1.2rem;
     justify-content: center;
     color: var(--secondary-color);
     /* border: 1px solid black; */
@@ -59,12 +59,13 @@ header {
 
 .travel-option {
     display: flex;
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
     border: 1px solid var(--fourth-color);
-    border-top-right-radius: 3%;
-    border-top-left-radius: 3%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 1px;
     flex: 1 1 0;
-    /*allows columns to shrink w/o overflow*/
+    /* ^ allows columns to shrink w/o overflow*/
     min-width: 0;
     overflow: hidden;
     justify-content: center;
@@ -74,8 +75,25 @@ header {
     height: 100%;
     font-family: "Fugaz One", sans-serif;
     font-size: 20px;
+    transition: transform 0.3s ease;
+    /* transition: color 0.3s; */
 }
 
 .travel-option:hover {
-    transform: scale(1.02);
+    transform: scale(1.04);
+    color: var(--secondary-color);
+}
+
+@media screen and (max-width: 768px) {
+    /* Mobile format -> One column */
+
+    .travel-options-list {
+        flex-wrap: wrap;
+    }
+
+    .travel-option {
+        flex: auto;
+        width: 310px;
+        height: 25%;
+    }
 }
