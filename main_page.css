@@ -4,8 +4,14 @@
     --secondary-color: #244855;
     --tertiary-color: #fbe9d0;
     --fourth-color: #874f41;
+    --written-font: "Sour gummy", sans-serrif;
 }
 
+body {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
 
 header {
     display: flex;
@@ -68,7 +74,8 @@ body {
 .search-input {
     flex: 1;
     padding: 0.75rem 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-family: var(--written-font);
     border: none;
     outline: none;
 }
@@ -91,10 +98,10 @@ body {
     display: flex;
     font-size: 1.4rem;
     justify-content: center;
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     /* border: 1px solid black; */
     height: 80px;
-    font-family: "Play-fair", sans-serif;
+    font-family: "Sour gummy", sans-serif;
 }
 
 /* Container for all travel options */
@@ -105,6 +112,8 @@ body {
     flex-wrap: nowrap;
     width: 100%;
     height: 400px;
+    box-shadow: 0 4px 12px rgba(27, 76, 119, 0.1);
+
 }
 
 .travel-option {
@@ -161,7 +170,7 @@ body {
     .travel-option {
         flex: 1 1 90%;
         width: 310px;
-        height: 30%;
+        height: 27%;
         margin: 0.1px;
     }
 }
