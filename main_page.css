@@ -1,6 +1,6 @@
 :root {
     --bg-color: #90aead;
-    --primary-color: #e64833;
+    --primary-color: #e65433;
     --secondary-color: #244855;
     --tertiary-color: #fbe9d0;
     --fourth-color: #874f41;
@@ -61,7 +61,10 @@ header {
     display: flex;
     background-color: var(--primary-color);
     border: 1px solid var(--fourth-color);
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
     flex: 1 1 0;
+    /*allows columns to shrink w/o overflow*/
     min-width: 0;
     overflow: hidden;
     justify-content: center;
@@ -69,7 +72,8 @@ header {
     transition: background 0.3s;
     width: 310px;
     height: 100%;
-
+    font-family: "Fugaz One", sans-serif;
+    font-size: 20px;
 }
 
 .travel-option:hover {
