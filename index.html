@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Main page</title>
+    <link rel="stylesheet" type="text/css" href="main_page.css">
+
+    <!-- Google Fonts code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Monoton&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Playfair+Display:ital,wght@0,525;1,525&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Include site name here, need to change it-->
+    <header>
+        <h1 class="title">Mooving Around</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!--Search bar at top of page-->
+    <div class="search-bar">
+        <input type="text" placeholder="Search..." class="search-input" />
+        <button class="search-button"><img
+                src="https://images.vexels.com/media/users/3/200001/isolated/preview/ff97a937322b46f443be20b2b676a7f6-magnifying-glass-icon-magnifying-glass.png"
+                alt=🔍 width=35px></button>
+    </div>
+
+    <div class="top-info">
+        <p>Welcome! How would you like to get around Davis?</p>
+    </div>
+
+    <!--Container for main part of page-->
+    <div class="travel-options-list">
+        <!--active transportation mainly is bikes, but can also be walking, scooters, etc.-->
+        <a href="active_transportation.html" class="travel-option">
+            <div id="active-transportation">
+                <p>BIKES & ACTIVE TRANSPORTATION</p>
+                <!-- <img src="images/bike_icon.png" alt="bike icon"> -->
+            </div>
+        </a>
+
+        <!-- public transportation options -->
+        <a href="public_transportation.html" class="travel-option">
+            <div id="bus">
+                <p>BUS & PUBLIC TRANSPORTATION</p>
+                <!-- <img class="icon-style" src="images/bus_icon.png" alt="bus icon"> -->
+            </div>
+        </a>
+
+        <!-- Driving and parking info -->
+        <a href="car.html" class="travel-option">
+            <div id="driving-parking">
+                <p>DRIVING & PARKING</p>
+                <!-- <img src="images/car_icon.png" alt="car icon"> -->
+            </div>
+        </a>
+
+        <!-- Amtrack mainly -->
+        <a href="train.html" class="travel-option">
+            <div id="trains">
+                <p>TRAINS</p>
+                <!-- <img src="images/train_icon.png" alt="train icon"> -->
+            </div>
+        </a>
+    </div>
+
+
+</body>
+
+
+</html>
