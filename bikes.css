@@ -169,7 +169,7 @@ main {
 .section-img {
     width: 45%;
     /* responsive */
-    max-width: 300px;
+    max-width: 350px;
     /* optional: limit size */
     height: auto;
     border-radius: 12px;
