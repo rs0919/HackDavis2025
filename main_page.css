@@ -4,7 +4,8 @@
     --secondary-color: #244855;
     --tertiary-color: #fbe9d0;
     --fourth-color: #874f41;
-    --written-font: "Sour gummy", sans-serrif;
+    --written-font: "Sour gummy", sans-serif;
+    --neutral-font: "Play-fair", sans-serif;
 }
 
 body {
@@ -42,6 +43,7 @@ header {
 
 nav a {
     font: 0.5rem;
+    font-family: var(--neutral-font);
     margin-left: 0.8rem;
     margin-right: 0.3rem;
     text-decoration: none;
