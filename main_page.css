@@ -21,6 +21,15 @@ header {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
+/* Not being used currently */
+.icon-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 30px;
+}
+
 .title {
     font-family: "Monoton", sans-serif;
     font-weight: 400;
