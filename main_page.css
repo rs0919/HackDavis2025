@@ -145,18 +145,24 @@ body {
     width: 310px;
     height: 100%;
     font-family: "Fugaz One", sans-serif;
-    font-size: 27px;
+    font-size: 30px;
     color: var(--tertiary-color);
     text-decoration: none;
     transition: transform 0.3s ease;
     transition: border 0.3s ease;
     transition: color 0.2s;
+    transition: font-size 0.3s ease;
 }
 
 .travel-option:hover {
     transform: scale(1.02);
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
+    font-size: 31px;
+}
+
+.travel-option p {
+    text-align: center;
 }
 
 @media screen and (max-width: 900px) {
