@@ -84,12 +84,13 @@ main {
     display: flex;
     font-family: var(--written-font);
     font-size: 1.7rem;
-    height: 200px;
+    height: 80%;
     width: 80%;
     padding-left: 10%;
     justify-content: center;
     align-items: center;
     color: var(--tertiary-color);
+    margin-bottom: 0.5rem;
 }
 
 .scroll-buttons {
@@ -103,6 +104,7 @@ main {
     display: flex;
     justify-content: center;
     width: 80%;
+    max-width: 750px;
     padding: 0.5rem 1rem;
     font-size: 2.5rem;
     font-family: var(--written-font);
@@ -120,6 +122,29 @@ main {
 .scroll-button:hover {
     background-color: var(--primary-color);
     color: var(--tertiary-color);
+}
+
+@media screen and (min-width: 1220px) {
+    .top-page {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .scroll-buttons {
+        margin-top: 3rem;
+        margin-left: 5rem;
+    }
+
+    .scroll-button {
+        width: 100%;
+    }
+
+    #intro {
+        width: 40%;
+        margin-right: 3rem;
+        margin-top: 1rem;
+    }
 }
 
 .section-header {
