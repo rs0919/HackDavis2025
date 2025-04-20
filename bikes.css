@@ -1,6 +1,7 @@
 :root {
     --bg-color: #90aead;
     --primary-color: #e65433;
+    --primary-variant: #f76443;
     --secondary-color: #244855;
     --tertiary-color: #fbe9d0;
     --fourth-color: #874f41;
@@ -137,7 +138,7 @@ main {
     }
 
     .scroll-button {
-        width: 100%;
+        width: 110%;
     }
 
     #intro {
@@ -181,6 +182,18 @@ main {
 
 .section {
     margin-top: 10rem;
+}
+
+.info-link {
+    text-decoration: none;
+    color: var(--fourth-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+    /* transition: font-weight 0.3s ease; */
+}
+
+.info-link:hover {
+    color: var(--primary-variant);
 }
 
 footer {
