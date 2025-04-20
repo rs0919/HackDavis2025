@@ -85,7 +85,10 @@ main {
     font-family: var(--written-font);
     font-size: 1.7rem;
     height: 200px;
+    width: 80%;
+    padding-left: 10%;
     justify-content: center;
+    align-items: center;
     color: var(--tertiary-color);
 }
 
@@ -153,4 +156,10 @@ main {
 
 .section {
     margin-top: 10rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
 }
