@@ -108,6 +108,7 @@ body {
 
 .top-info {
     display: flex;
+    flex-direction: row;
     font-size: 1.4rem;
     justify-content: center;
     color: var(--tertiary-color);
@@ -122,11 +123,11 @@ body {
     /* border: 1px solid black; */
     display: flex;
     justify-content: center;
+    align-self: center;
     flex-wrap: nowrap;
-    width: 99%;
+    width: 90%;
     height: 400px;
     box-shadow: 0 4px 12px rgba(27, 76, 119, 0.1);
-    padding-left: 4px;
 
 }
 
@@ -136,7 +137,7 @@ body {
     border: 2px solid var(--fourth-color);
     border-radius: 12px;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.177);
-    margin: 1px;
+    margin: 1rem;
     flex: 1 1 0;
     /* ^ allows columns to shrink w/o overflow*/
     min-width: 0;
@@ -144,8 +145,8 @@ body {
     justify-content: center;
     align-items: center;
     transition: background 0.3s;
-    width: 310px;
-    height: 100%;
+    width: 200px;
+    height: 90%;
     font-family: "Fugaz One", sans-serif;
     font-size: 30px;
     color: var(--tertiary-color);
@@ -168,7 +169,7 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-    /* Mobile format -> One column */
+    /* Tablet - 2x2 */
 
     .travel-options-list {
         flex-wrap: wrap;
@@ -192,7 +193,15 @@ body {
     .travel-option {
         flex: 1 1 90%;
         width: 310px;
-        height: 27%;
-        margin: 0.1px;
+        height: 21%;
+        margin: 0.4rem;
+    }
+
+    .top-info {
+        margin-bottom: 0.5rem;
+        margin-right: 0.5rem;
+        margin-left: 1rem;
+        justify-self: center;
+        align-items: center;
     }
 }
