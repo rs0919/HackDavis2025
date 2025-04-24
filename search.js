@@ -7,7 +7,7 @@ document.getElementById("search").addEventListener("keydown", function (e) {
 });
 
 function handleSearch() {
-    console.log("this working?");
+    //console.log("this working?");
     const query = document.getElementById("s-input").value.toLowerCase().trim();
 
     const routes = [

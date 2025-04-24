@@ -43,10 +43,10 @@ header {
 
 nav a {
     font: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-family: var(--neutral-font);
     margin-left: 0.55rem;
-    margin-right: 0.3rem;
+    margin-right: 0.9rem;
     text-decoration: none;
     color: var(--tertiary-color);
     font-weight: 600;
@@ -109,7 +109,7 @@ body {
 .top-info {
     display: flex;
     flex-direction: row;
-    font-size: 1.4rem;
+    font-size: 1.52rem;
     justify-content: center;
     color: var(--tertiary-color);
     /* border: 1px solid black; */
@@ -198,10 +198,30 @@ body {
     }
 
     .top-info {
+        /* maintain spacing for info at top */
         margin-bottom: 0.5rem;
         margin-right: 0.5rem;
         margin-left: 1rem;
         justify-self: center;
         align-items: center;
     }
+
+    /* switch header so page title (Mooving Around) is on top, and links are below it */
+    header {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+        min-width: 80%;
+        /* border: 2px solid white; */
+        text-align: center;
+    }
+
+    header nav {
+        margin-bottom: 1.3rem;
+    }
+
+
 }
